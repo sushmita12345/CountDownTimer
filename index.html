@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="counter-main-container">
+        <h2 class="heading-container">Countdown Timer</h2>
+        <div>
+          <div class="counter-container">
+            <div class="counter-wrapper">
+              <span class="counter-name">Hours</span>
+              <!-- <span class="counter-count">00</span> -->
+              <input
+                type="number"
+                maxlength="2"
+                oninput="this.value=this.value.slice(0, this.maxLength)"
+                class="counter-count hour"
+                placeholder="00"
+              />
+            </div>
+            <div class="counter-wrapper">
+              <span class="counter-colon">:</span>
+            </div>
+            <div class="counter-wrapper">
+              <span class="counter-name">Minutes</span>
+              <!-- <span class="counter-count">00</span> -->
+              <input
+                type="number"
+                maxlength="2"
+                oninput="this.value=this.value.slice(0, this.maxLength)"
+                class="counter-count minute"
+                placeholder="00"
+              />
+            </div>
+            <div class="counter-wrapper">
+              <span class="counter-colon">:</span>
+            </div>
+            <div class="counter-wrapper">
+              <span class="counter-name">Seconds</span>
+              <!-- <span class="counter-count">00</span> -->
+              <input
+                type="number"
+                maxlength="2"
+                oninput="this.value=this.value.slice(0, this.maxLength)"
+                class="counter-count second"
+                placeholder="00"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="counter-button-container">
+          <button class="counter-button start">Start</button>
+          <button class="counter-button stop">Stop</button>
+          <button class="counter-button reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </body>
+</html>
